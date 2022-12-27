@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Application</title>
+   
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     .container{
+         max-width: 900px;
+         margin: 0 auto;
+         height: 100vh;
+         display: flex;
+     
+     }
+     .apply-box{
+         max-width: 700px;
+         padding: 20px;
+         background-color: white;
+         margin: 0 auto;
+         margin-top: 20px;
+         box-shadow: 5px 4px 6px;
+         border-radius: 9px;
+     }
+     body{
+         background-color:gray;
+     }
+     .apply-box h1{
+         font-weight: bold;
+         text-align: center;
+     }
+     .form-container{ 
+         margin-top:20px ;
+         display: grid;
+         grid-template-columns:repeat(auto-fit, minmax(200px,1fr));gap:20px;
+     }
+     .form-control{
+         display: flex;
+        flex-direction:column ;
+     }
+     .label{
+         font-size: 18px;
+         margin-bottom: 5px;
+     }
+     input,select,textarea{
+         padding: 6px 10px;
+         border: 1px solid grey;
+         border-radius: 4px;
+         font-size: 15px;
+     }
+     input:focus{
+         outline-color: aqua;
+     }
+     .button-container{
+         display: flex;
+         justify-content: flex-end;
+         margin-top: 20px;
+     }
+     button{
+         background-color: bisque;
+         color: black;
+         border: transparent solid 2px;
+         padding: 5px 10px;
+         border-radius: 8px;
+     }
+     button:hover{
+         background-color: black;
+         color: white;
+         border: 2px solid blue;
+         cursor: progress;
+     }
+     .text-area-con{
+         grid-column: 1/span 2;
+     }
+     .text-area-con textarea{
+         width: 100%;
+     }
+     @media (max-width:460px){grid-column: 1/span 1;
+         
+     }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="apply-box">
+            <h1>Job Application</h1>
+            <form action="">
+                <div class="form-container">
+                <div class="form-control">
+                    <label for="first-name">
+                        First Name:-
+                    </label>
+                    <input id="first-name" name="first name" placeholder="Enter first name">
+                </div>
+                <div class="form-control">
+                    <label for="last-name">
+                        Last Name:-
+                    </label>
+                    <input id="last-name" name="last-name" placeholder="Enter last name">
+                </div>
+                <div class="form-control">
+                    <label for="Email">
+                        Email:-
+                    </label>
+                    <input type="email" id="Email" name="Email" placeholder="Enter Email Id">
+                </div>
+                <div class="form-control">
+                    <label for="job-role">
+                        Role&Responsibilities:-
+                    </label>
+                    <select name="job-role">
+                        <option value="">
+                            --Select job role--
+                        </option>
+                        <option value="clerk">Clerk</option>
+                        <option value="probationary officer">Probationary Officer</option>
+                        <option value="manager">Manager</option>
+                        <option value="senior manager">Senoir Manager</option>
+                    </select>
+                </div>
+                <div class="text-area-con">
+                    <label for="address">
+                        Address:-
+                        </label>
+                        <textarea id="address" name="address"
+                        rows="4"
+                        cols="45" placeholder="Enter Address..."></textarea></div>
+                        <div class="form-control">
+                            <label for="City">
+                                City:-
+                            </label>
+                            <input id="city" name="city" placeholder="Enter City name ">
+                        </div>
+                        <div class="form-control">
+                            <label for="pincode">
+                                Pincode:-
+                            </label>
+                            <input  type="number" id="pincode" name="pincode" placeholder="Enter Pincode no ">
+                        </div>
+                        <div class="form-control">
+                            <label for="Date">
+                                Date:-
+                            </label>
+                            <input  value=""type="date" id="date" name="date">
+                        </div>
+                        <div class="form-control">
+                            <label for="upload">
+                                Upload your CV
+                            </label>
+                            <input  type="file" id="upload" name="upload">
+                        </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Apply now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

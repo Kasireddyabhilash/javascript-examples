@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration:-</title>
+  </head>
+  <body>
+    <div align="center">
+      <h1>Google</h1>
+      <img src="../Images/google logo.gif">
+      <input type="text" size="40" list="terms" />
+
+      <datalist id="terms">
+        <option>HTML Examples</option>
+        <option>HTML Tutorial</option>
+        <option>HTML FAQ</option>
+        <option>JavaScript Tutorial</option>
+        <option>JavaScript FAQ</option>
+        <option>CSS FAQ</option>
+        <option>CSS Tutorial</option>
+      </datalist>
+      <p>
+        <button>Search</button>
+      </p>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h3>Register User</h3>
+      <dl>
+        <dt>UserName</dt>
+        <dd>
+          <input
+            autofocus
+            type="text"
+            required
+            minlength="4"
+            maxlength="15"
+            placeholder="Block letters only"
+            id="Username"
+            name="UserName"
+          />
+        </dd>
+        <dt>Mobile</dt>
+        <dd>
+          <input
+            type="text"
+            size="40"
+
+            no-validate
+            placeholder="eg: +91&10 digits"
+            name="Mobile"
+            id="Mobile"
+          />
+        </dd>
+        <dt>Your Pincode</dt>
+        <dd>
+          <input
+            type="text"
+            required
+            size="5"
+            maxlength="10"
+            minlength="4"
+            placeholder="5 Digit PIN"
+            name="Pin"
+          />
+        </dd>
+        <dt>Date</dt>
+        <dd><input type="date" /></dd>
+        <dt>Month</dt>
+        <dd><input type="month"></dd>
+        <dt>Week</dt>
+        <dd><input type="week" min="2022-12-1" max="2020-12-22"></dd>
+        <dd>Number Input</dd>
+        <dt><input type="number"min="1"max="10"step="5"></dt>
+        <dt>Date Time Local</dt>
+        <dd><input type="datetime-local"></dd>
+        <dt>Intrest Rate</dt>
+        <dd><input type="range" min="5" max="6" step="2" value="1"></dd>
+        <dt>URL</dt>
+        <dd><input type="url"></dd>
+        <dt>File Input</dt>
+        <dd><input type="file"></dd>
+        <input type="file"   accept=".jpg"  multiple>
+        <input type="file"  accept=".jpg, .gif, .png">
+        <dt>Email</dt>
+        <dd><input type="email"></dd>
+        <dd>Hexa code colors</dd>
+        <dt><dt> <input type="color"  value="#ff0000"></dt></dt>
+        <dt>Gender</dt>
+        <input type="radio" />Male <input type="radio" />Female
+        <input type="radio" />None ofthe Above
+        <dt>Acknowledgement</dt>
+        <dd><input type="checkbox" AcceptTerms /></dd>
+      </dl>
+      <button>Search</button>
+      <button>Register</button>
+
+    </form>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .terms {
+            width: 50%;
+            border:1px solid gray;
+            padding: 5px;
+            height: 100px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>Your Comments</dt>
+            <dd><textarea rows="4" cols="40"></textarea></dd>
+            <dt>Terms of Service</dt>
+            <dd><textarea disabled rows="4" cols="40"><b>Depending</b> on how you obtained the Windows software, this is a license agreement between (i) you and the device manufacturer or software installer that distributes the software with your device; or (ii) you and Microsoft Corporation (or, based on where you live or, if a business, where your principal place of business is located, one of its affiliates) if you acquired the software from a retailer. Microsoft is the device manufacturer for devices produced by Microsoft or one of its affiliates, and Microsoft is the retailer if you acquired the software directly from Microsoft. Note that if you are a volume license customer, use of this software is subject to your volume license agreement rather than this agreement.</textarea></dd>
+            <dt>Terms and Conditions</dt>
+            <dd>
+                <div class="terms">
+                    <p><b>Depending</b> on how you obtained the Windows software, this is a license agreement between (i) you and the device manufacturer or software installer that distributes the software with your device; or (ii) you and Microsoft Corporation (or, based on where you live or, if a business, where your principal place of business is located, one of its affiliates) if you acquired the software from a retailer. Microsoft is the device manufacturer for devices produced by Microsoft or one of its affiliates, and Microsoft is the retailer if you acquired the software directly from Microsoft. Note that if you are a volume license customer, use of this software is subject to your volume license agreement rather than this agreement.</p>
+                </div>
+            </dd>
+        </dl>
+        <button>Post Comment</button>
+    </form>
+</body>
+</html>
+
+

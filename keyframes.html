@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            position: sticky;
+            top: 0px;
+            height: 300px;
+            background-image: url("../public/images/kids.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .title {
+            text-align: center;
+            animation-name: SlideIn;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+        }
+        @keyframes SlideIn {
+            from {
+                margin-top: 350px;
+            }
+            to {
+                margin-top: 0px;
+            }
+        }
+        .text {
+            text-shadow: 2px 2px 2px black;
+            color:white;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p>We understand that you may have questions about the Microsoft Services Agreement. We have an FAQ page (https://www.microsoft.com/en-us/servicesagreement/upcoming-faq.aspx) that provides more information, including what Microsoft products and services it covers. Whenever we make changes, we provide a summary of the most notable changes to the current Microsoft Services Agreement. We will also continue to provide a summary of the changes to the previous version, and a link to the previous version, of the Microsoft Services Agreement on the Summary of Changes (https://www.microsoft.com/en-us/servicesagreement/upcoming-updates.aspx) page.</p>
+
+    <div class="banner">
+       <div class="title">
+        <h1 class="text">Kid's Fashion</h1>
+        <p class="text">EOYS 60% OFF</p>
+       </div>
+    </div>
+    <p>We understand that you may have questions about the Microsoft Services Agreement. We have an FAQ page (https://www.microsoft.com/en-us/servicesagreement/upcoming-faq.aspx) that provides more information, including what Microsoft products and services it covers. Whenever we make changes, we provide a summary of the most notable changes to the current Microsoft Services Agreement. We will also continue to provide a summary of the changes to the previous version, and a link to the previous version, of the Microsoft Services Agreement on the Summary of Changes (https://www.microsoft.com/en-us/servicesagreement/upcoming-updates.aspx) page.</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .parent {
+            border:10px solid red;
+            width: 600px;
+            height: 300px;
+            margin-left: 200px;
+            position: relative;
+        }
+        .child {
+            border:10px solid blue;
+            width: 50px;
+            height: 20px;
+            position: absolute;
+            top: 100px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+         Parent
+         <div class="child">
+            Child
+         </div>
+    </div>
+</body>
+</html>
+

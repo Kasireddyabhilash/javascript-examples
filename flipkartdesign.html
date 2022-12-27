@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .b1{
+display: flex;
+color: white;
+border: none;
+text-align: center;
+margin-top: 10px;
+
+}
+.b2{
+width: 210px;
+height: 35px;
+margin-left: 45px;
+background-color: #ff9f00;
+border: none;
+padding-top: 20px;
+border-radius: 3px;
+}
+.b3{
+width: 210px;
+height: 35px;
+margin-left: 15px;
+background: #fb641b;
+padding-top: 20px;
+border-radius: 3px;
+}
+        body {
+            font-family: Arial;
+        }
+
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+
+        }
+/* 
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+        .centered img {
+            width: 450px;
+            height: 320px;
+            padding-left: 25px;
+           
+        }
+        .bodysection {
+            display: flex;
+        }
+
+        .info {
+            color: gray;
+        }
+
+        .rating {
+
+            border: 1px solid black;
+            color: white;
+            background-color: green;
+            padding: 2px;
+            font-size: 12px;
+
+        }
+
+        .i {
+            color: green;
+        }
+
+        .terms {
+            color: blue;
+        }
+  
+
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="split left">
+        <div class="centered">
+            <img src="../download.jpg" alt="flipkart_image.jpg">
+            <div class="b1">
+                <div class="b2"><span class="bi bi-cart">ADD TO CART</span></div>
+                <div class="b3"><span class="bi bi-lightning-fill">BUY NOW</span></div>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <font face="free style script"size="5">REDMI Note 11 SE (Bifrost Blue, 64 GB) (6 GB RAM)</font><br><br>
+
+            <section>
+
+                <div>
+                    <button class="bi bi-star rating">4.3</button> &nbsp; <font face="arial"color="gray">14,314 Ratings & 769 Reviews</font>
+                </div>
+
+                <div>
+                    Extra ₹4800 off
+                    <b><font size="6">₹12,199</font></b><span> &nbsp;<font face="arial"color="gray"><strike>₹16,999</strike></font> &nbsp;28% off <span class="info"><span
+                                class="bi bi-info-circle"></span></span>
+                        <div>+ ₹29 Secured Packaging Fee</div><br>
+                        <div><strong>Available Offers</strong></div>
+                        <div><span class="highlite"></span><span class="bi bi-tags-fill i"></span> Pay Later <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                            </svg></div>
+                        <div><span class="bi bi-tags-fill i "></span><b>Bank Offers:</b>10% off on Citi Credit Card
+                            Transactions, up
+                            to
+                            ₹1,500. On orders of ₹5,000 and above</i><span class="terms"> T&C</span></div>
+                        <div><span class="bi bi-tags-fill i "></span><b>Bank Offers:</b>10% off on Citi Credit Card
+                            EMI Transactions, up to
+                            ₹2,000. On orders of ₹5,000 and above</i><span class="terms"></span></div>
+                        <div><span class="bi bi-tags-fill i "></span><b>Bank Offers:</b>10% off on Citi Debit Card
+                            Transactions, up to ₹1,500.
+                            On orders of ₹5,000 and above</i><span class="terms"> T&C</span></div>
+                        <div>
+            </section>
+            <footer>
+                <details>
+                    <summary><span class="terms">View 5 more offers</span></summary>
+                    <div><span class="bi bi-tags-fill i"></span><b>Special Price:</b>Get extra ₹4800 off (price
+                        inclusive of
+                        cashback/coupon)</span><span class="terms"> T&C</span></div>
+                    <div><span class="bi bi-tags-fill i"></span><b>Freebie:</b>Get 1-month KukuFM
+                        Subscription</span><span class="terms"> T&C</span></div>
+                    <div><span class="bi bi-tags-fill i"></span><b>Partner Offer:</b>Sign up for Flipkart Pay Later and get Flipkart Gift Card worth upto ₹1000*</span><span class="terms"><font face="arial" size="7" color="red"> Know More</font> &gt;</span></div>
+                    <div><span class="bi bi-calendar-check i"></span><b>No cost EMI-₹2,033/month.</b>Standard EMI
+                        also available</span><span class="terms"> View Plans</span>
+                    </div>
+                    <div><span class="bi bi-tags-fill i"></span><b>Bank Offer:</b>5% Cashback on Flipkart Axis Bank
+                        Card</span><span class="terms"> T&C</span> </div>
+                        
+
+                </details>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .poco {
+            display: grid;
+            grid-template-columns: 3.5fr 6fr 2.5fr;
+            font-family: Arial;
+            margin-bottom: 10px;
+        }
+
+        h2 span {
+            color: rgb(218, 209, 209);
+            margin-right: 25px;
+        }
+
+        h2 {
+            color: rgb(15, 3, 3)
+        }
+
+        .rating {
+            background-color: green;
+            color: white;
+            font-weight: bolder;
+            padding: 4px;
+            border-radius: 2px;
+            margin-right: 12px;
+
+        }
+
+        .Reviews {
+            font-weight: bold;
+            color: grey;
+        }
+
+        ul {
+            color: gray;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .offer {
+            color: green;
+            font-weight: bold;
+            margin-top: 8px;
+            font-size: 20px;
+        }
+
+        p strike  {
+            font-size: 20px;
+            color: gray;
+        }
+        span{
+            font-size: 20px;
+            color: rgb(207, 203, 203);  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="poco">
+        <div>
+            <img src="./images/poco-1png.png">
+        </div>
+        <div>
+            <h2><span class="bi bi-heart-fill"></span>POCO C31 (Royal Blue, 64 GB) (4 GB RAM) <span>#JustHere</span>
+            </h2>
+            <p><span class="rating">4.3<span class="bi bi-star-fill"></span></span><span class="Reviews">1,54,353
+                    Ratings & 9,742 Reviews</span></p>
+            <ul>
+                <li> Flipkart Pay Later?</li>
+                <li>Bank Offer5% Cashback on Flipkart Axis Bank Card T&C</li>
+                <li>Special PriceGet extra ₹3000 off (price inclusive of cashback/coupon)T&C</li>
+                <li>Get Google Audio @ 4699 T&C</li>
+                <li>Google Nest hub(2nd gen) at just ₹4999 T&C</li>
+                <li>Google Nest hub(2nd gen) at just ₹4999 T&C</li>No cost EMI ₹1,500/month. Standard EMI also availableView Plans</li>
+                <li> Google Nest mini at just ₹1999 T&C</li>
+               <li>Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500* Know More</li>
+            </ul>
+        </div>
+        <h1>₹9,499 <img src="../flipkart assured.jpg" width="100px" </h1>
+        <p><strike>₹11,000</strike><span class="offer"> 20% Off</span></p>
+        <ul>
+            <li><span>Free Delivery</span></li>
+             <li><span>Upto ₹14,350 on Exchange</span></li>
+             <li><span>No Cost EMI from ₹2,499/Month</span></li>
+             </ul>
+    </div>
+</body>
+
+</html>
+<hr>
+<div class="poco">
+    <div>
+        <img src="./images/poco-1png.png">
+    </div>
+    <div>
+        <h2><span class="bi bi-heart-fill"></span>POCO C31 (Royal Blue, 64 GB) (4 GB RAM) <span>#JustHere</span>
+        </h2>
+        <p><span class="rating">4.3<span class="bi bi-star-fill"></span></span><span class="Reviews">1,54,353
+                Ratings & 9,742 Reviews</span></p>
+        <ul>
+            <li> Flipkart Pay Later?</li>
+            <li>Bank Offer5% Cashback on Flipkart Axis Bank Card T&C</li>
+            <li>Special PriceGet extra ₹3000 off (price inclusive of cashback/coupon)T&C</li>
+            <li>Get Google Audio @ 4699 T&C</li>
+            <li>Google Nest hub(2nd gen) at just ₹4999 T&C</li>No cost EMI ₹1,500/month. Standard EMI also availableView Plans</li>
+            <li> Google Nest mini at just ₹1999 T&C</li>
+           <li>Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500* Know More</li>
+        </ul>
+    </div>
+    <h1>₹9,499 <img src="./images/poco-2png.png" width="100px" </h1>
+        <p><strike>₹11,000</strike><span class="offer"> 20% Off</span></p>
+        <ul>
+       <li><span>Free Delivery</span></li>
+        <li><span>Upto ₹14,350 on Exchange</span></li>
+        <li><span>No Cost EMI from ₹2,499/Month</span></li>
+        </ul>
+</div>

@@ -1,0 +1,72 @@
+<!-- <script>
+    var link = "<a href='home.html'>Home</a>";
+    document.write(link);
+</script> -->
+<!-- <script>
+     var username = "Sandeep";
+     var age = 29;
+     var msg1 = "Hello !" + username +" "+ "you age should be" + " " + (age+1) +" "  + "next year <br>";
+     document.write(msg1);
+     var msg2 = `Hello ! ${username} you age should be ${age+1} next year`;
+   document.write(msg2);
+</script> -->
+<!-- <script>
+    var path ="\"d:\\images\\flower.jpg\"";
+document.write(path);
+</script> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script type="text/javascript">
+         function SubmitClick(){
+            var userName = document.getElementById("userName").value;
+            var userError = document.getElementById("userError");
+
+            if(userName=="") {
+               userError.innerHTML = "username required".fontcolor('red').bold().italics();
+            } else {
+               document.write(`Hello ! ${userName}`);
+            }
+
+         }
+         function ChangeCase(){
+            var userName = document.getElementById("userName").value;
+            document.getElementById("userName").value = userName.toUpperCase();
+            document.getElementById("userName").style.color = "red";
+         }
+   </script>
+</head>
+<body>
+   <dl>
+      <dt>UserName:</dt>
+      <dd><input type="text" onblur="ChangeCase()" placeholder="Block Letters Only" id="userName"></dd>
+      <dd id="userError"></dd>
+   </dl>
+   <button onclick="SubmitClick()">Submit</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dl>UserName:
+        <dd><input type="text" ></dd>
+        <dd id="userError"></dd>
+    </dl>
+    
+</body>
+</html>

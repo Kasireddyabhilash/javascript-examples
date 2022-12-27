@@ -1,0 +1,55 @@
+<!-- without-variable
+<script>
+    document.write("Hello ! " + prompt("Enter Name") + "<br>");
+    document.write(prompt("Enter Name") + " Please submit your details.");
+</script>
+
+with variable-->
+ <!-- <script>
+     username = prompt("Enter Name");
+     document.write("Hello ! " + username + "<br>");
+     document.write(username + " please submit your details.");
+</script> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function VerifyRequired(){
+            var username = document.getElementById("userName").value;
+            var usererror = document.getElementById("userError");
+            if(username=="") {
+                userError.innerHTML = "User Name Required".fontcolor('red');
+            } else {
+                userError.innerHTML = "";
+            }
+        }
+        function VerifyLength(){
+            var username = document.getElementById("userName").value;
+            var usererror = document.getElementById("userError");
+            if(username.length<4) {
+                userError.innerHTML = "Name too short..".fontcolor('red');
+            } else if(username.length>10) {
+                userError.innerHTML = "Name too long..".fontcolor('gold');
+            }
+            else {
+                userError.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" onkeyup="VerifyLength()" onblur="VerifyRequired()" id="userName">
+        </dd>
+        <dd id="userError">
+        </dd>
+    </dl>
+</body>
+</html>

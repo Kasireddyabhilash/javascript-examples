@@ -1,0 +1,81 @@
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #UserName:read-only {
+         cursor: not-allowed;
+      }
+      button:disabled {
+         cursor: not-allowed;
+         background-color: lightcoral;
+      }
+    </style>
+</head>
+<body>
+    User Name :<input type="text" id="UserName" value="John" readonly> <button disabled>Submit</button>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #UserName+div {
+         display: none;
+       }
+       #UserName:focus+div {
+         display: block;
+       }
+       #UserName:focus {
+         background-color: yellow;
+       }
+    </style>
+</head>
+<body>
+    <dl>
+      <dt>User Name</dt>
+      <dd>
+         <input type="text" id="UserName">
+         <div>Name in Block Letters</div>
+      </dd>
+    </dl>
+</body>
+</html>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #terms:checked+span {
+          color:green;
+        }
+        #terms+span{
+          color:red;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+       <legend>Terms of Service</legend>
+       <textarea rows="4" cols="40" disabled>Read our Terms of Service...</textarea>
+       <div>
+         <input id="terms" type="checkbox"> <span>I Accept</span>
+       </div>
+    </fieldset>
+</body>
+</html>

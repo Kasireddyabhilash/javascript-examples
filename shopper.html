@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopper </title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .brand-name{
+            font-size: 35px;
+        }
+       nav span{
+        font-size: 22px;
+        margin-left: 10px;
+        margin-top: 25px;
+       }
+       header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-weight: bold;
+        background-color: rgb(217, 219, 221);
+       }
+       .title{
+        background-color: black;
+        color:aliceblue;
+        text-align: center;
+        padding: 10px;
+        letter-spacing: 5px;
+       }
+       .women{
+        background-image: url("/public/Images/women1.jfif");
+        height: 500px;
+        width: 450px;;
+        background-repeat: no-repeat;
+        
+       }
+       .men{
+        background-image: url("/public/Images/women1.jfif");
+        height: 500px;
+        width: 450px;;
+        background-repeat: no-repeat;
+        
+       }
+       .kids{
+        background-image: url("/public/Images/women1.jfif");
+        height: 500px;
+        width: 450px;
+        background-repeat: no-repeat;
+    
+       }
+       .women,.men,.kids{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       }
+       main{
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        height:450px;
+        margin-top: 10px;
+       }
+    .women:hover,.men:hover,.kids:hover{
+        opacity:0.8;
+    }
+    .card-body{
+        height:100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-title{
+        font-size: 75px;
+        color: aliceblue;
+        text-shadow: 2px 2px 2px black;
+        font-size: 15px;
+    }
+    .banner-button span{
+        margin-left: 0px;
+    }
+    .banner-button:hover{
+        cursor:grab
+    }
+     .banner-button:hover span{
+        margin-left:15px ;
+     }
+     section{
+        margin-top: 80px;
+     }
+     .logo-s{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        margin-left: 100px;
+        margin-right: 80px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        
+    }
+    .cc{
+        height: 200px;
+        padding-top: 100px;
+        width:auto;
+        color: black;
+        text-align: center;
+        justify-items: center;
+    }
+    .ad-img{
+        margin-top: 70px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+     .row_1{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        height: 400px;
+        
+
+     }
+     .img_1{
+        background-image: url("./Images/img_1.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        color: aliceblue;
+
+     }
+     .bag_collection{
+        font-weight: 500;
+        font-size: 30px;
+        padding-bottom: 30px;
+     }
+    </style>
+</head>
+<body>
+    <header>
+      <div>
+        <span class="brand-name">Shopper.</span>
+      </div>
+      <div>
+        <nav>
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>
+      </div>
+      <div>
+        <nav>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </nav>
+      </div>
+    </header>
+    <div class="title">
+        <font color="gold"></font><span class="bi bi-lightning-charge-fill"></span>
+                       HAPPY HOLIDAY DEALS ON EVERYTHING 
+        <font color="gold"></font><span class="bi bi-lightning-charge-fill"></span>
+    </div>
+    <main>
+        <div class="women">
+            <div class="card">
+                <div class="card-body">
+                    <div class="banner-title">Women</div>
+                </div>
+                <div class="card-footer">
+                    <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="men">
+            <div class="card">
+                <div class="card-body">
+                    <div class="banner-title">Men</div>
+                </div>
+                <div class="card-footer">
+                    <button>Shop Men<span class="bi bi-arrow-right"></span></button>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="kids">
+            <div class="card">
+                <div class="card-body">
+                    <div class="banner-title">Kids</div>
+                </div>
+                <div class="card-footer">
+                    <button>Shop Kids<span class="bi bi-arrow-right"></span></button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="logo-s">
+            <div class="bi bi-truck">
+                <font face="bold" size="3"><h5>FREE SHIPPING</h5></font><br>
+                <font face="bold" size="3" color="gray">From all orders over $100</font>
+                 </div>
+                 <div class="bi bi-arrow-left-right">
+                    <font face="bold" size="3"><h5>FREE RETURNS</h5></font><br>
+                     <font face="bold" size="3" color="gray">Return money within 30 days</font>
+                 </div>
+                 <div class="bi bi-lock">
+                    <font face="bold" size="3"><h5>SECURE SHOPPING</h5></font><br>
+                     <font face="bold" size="3" color="gray">You're in safe hands</font>
+                 </div>
+                 <div class="bi bi-arrow-left-right">
+                    <font face="bold" size="3"><h5>OVER 10,000 STYLES</h5></font><br>
+                     <font face="bold" size="3" color="gray">We have everything you need</font>
+                 </div>
+                </div>
+                <hr>
+                <div class="cc"
+        <font face="bold" size="8" color="gray"><b>NEW COLLECTION</b></font><br><br>
+        <font face="bold" size="6"><b>Best Picks 2019</b></font><br>
+        <font face="bold" size="3" color="gray">Appear, dry there darkness they're seas, dry waters thing fly midst.
+            Beast,above fly brought Very green.</font>
+        </div>
+        <div class="ad_img">
+            <div class=""></div>
+
+        </div>
+
+            
+            
+
+    </section>
+
+</body>
+</html>

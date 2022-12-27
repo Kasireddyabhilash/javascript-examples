@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       h1 {
+         width: 100px;
+       }
+       h1:active {
+         text-decoration: underline;
+         width: 600px;
+         transition: 10s;
+       }
+       img {
+         transition: 4s;
+       }
+       img:active {
+         width: 200px;
+         height: 200px;
+         transition: 2s;
+       }
+    </style>
+</head>
+<body>
+   <h1>Press hold the mouse button.</h1>
+   <img src="../public/images/clothing.jpg" width="50" height="50">
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      a:link {
+         text-decoration: none;
+         color:green;
+      }
+      a:visited {
+         color:gray;
+      }
+      a:active {
+         color:red;
+      }
+    </style>
+</head>
+<body>
+    <a href="../public/facebook.html">Facebook</a> |
+    <a href="http://www.ebay.in">Ebay</a&gt;
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #UserName:read-only {
+         cursor: not-allowed;
+      }
+      button:disabled {
+         cursor: not-allowed;
+         background-color: lightcoral;
+      }
+    </style>
+</head>
+<body>
+    User Name :<input type="text" id="UserName" value="John" readonly> <button disabled>Submit</button>
+</body>
+</html>

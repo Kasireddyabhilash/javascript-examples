@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.00">
+        <title>appointment form</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                font-family: arial;
+            }
+           .heading{
+            display: flex;
+            justify-content: center;
+           }
+           img{
+            margin-top: 30px;
+            margin-right: 20px;
+           }
+           .form-page{
+            border: 1px solid black;
+            padding: 20px;
+            background-color: aliceblue;
+
+           }
+           .inner-list{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+           }
+           form dd{
+            margin-bottom: 25px;
+           }
+           input{
+            padding: 5px;
+           }
+           .time-slot{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 22px;
+           }
+           .button{
+            justify-content: center;
+            display: flex;
+           }
+           button{
+            padding-left: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 40px;
+            font-size: 24px;
+            background-color: rgb(44, 44, 247);
+            color: rgb(161, 204, 245);
+            border: none;
+            border-radius: 10px;
+           }
+        </style>
+    </head>
+    <body bgcolor="rgb(72, 72, 223)">
+        <div class="form-page">
+            <div class="heading">
+                <span><img src="../public/images/calender-logo.JPG" alt=""></span>
+            <span><h1>Appointment Request Form</h1>
+                <p1>Let us know how we can help you!</p1></span>
+            </div>
+            <hr>
+            <br>
+            <div>
+                <form>
+                    <dl>
+                        <dt>Full Name</dt>
+                        <dd>
+                            <span>
+                                <select>
+                                    <option>Mr.</option>
+                                    <option>Mrs.</option>
+                                    <option>Miss.</option>
+                                </select>
+                            </span>
+                            <span>
+                                <input type="text" name="name" placeholder="First-Name">
+                            </span>
+                            <span>
+                                <input type="text" name="name" placeholder="Last-Name">
+                            </span>
+                        </dd>
+
+                        <dt>
+                            <dl class="inner-list">
+                                <span>
+                                    <dt>contact Number</dt>
+                                    <dd><input type="text" name="contact" placeholder="please enter valid no." value="+91"></dd>
+                                </span>
+                                <span>
+                                    <dt>Email Adress</dt>
+                                    <dd><input type="email" name="mail-id" placeholder="example@example.com"></dd>
+                                </span>
+                            </dl>
+                        </dt>
+
+
+                        <dt>Adress</dt>
+                        <dd><input type="text" name="adress" placeholder="your adress" size="60"></dd>
+                    </dl>
+
+
+                    <div class="time-slot">What date and time work best for you?</div>
+                    <dl>
+                        <dt>Any other specific date and time, if the above selection is not suitable.</dt><br>
+                        <dd>
+                            <span>
+                                <input type="date" name="date">
+                            </span>
+                            <span>
+                                <input type="time" name="time">
+                            </span>
+                            <span>
+                                <select>
+                                    <option>AM</option>
+                                    <option>PM</option>
+                                </select>
+                            </span>
+                        </dd>
+                        <dt>What services are you interested in?</dt>
+                        <dd><textarea name="comment" id="" cols="60" rows="10"></textarea></dd>
+                        <dt>Would you like to be notified about promotional services?</dt><br>
+                        <dd>
+                            <input type="radio" name="qs">YES
+                            <input type="radio" name="qs">NO
+                        </dd>
+                    </dl>
+                </form>
+                
+            </div>
+            <hr><br>
+            <div class="button">
+                <button>submit</button>
+            </div>
+        </div>
+    </body>
+</html>
+
